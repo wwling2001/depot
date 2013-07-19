@@ -371,3 +371,39 @@ Processing StoreController#add_to_cart (for 127.0.0.1 at 2013-07-10 11:47:08) [P
 Rendering template within layouts/store
 Rendering store/add_to_cart
 Completed in 146ms (View: 43, DB: 2) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-07-14 11:46:27) [GET]
+  [4;36;1mProduct Load (15.9ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 912ms (View: 832, DB: 17) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-07-15 11:04:08) [GET]
+  [4;36;1mProduct Load (101.6ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 2994ms (View: 1094, DB: 102) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2013-07-15 11:27:54) [POST]
+  Parameters: {"id"=>"2", "authenticity_token"=>"C61U18QHl50DpyflQBAAMqNC8Qd4qi92XKFpE41pvy4="}
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 1514ms (View: 705, DB: 421) | 200 OK [http://localhost/store/add_to_cart/2]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-07-15 11:44:50) [GET]
+  [4;36;1mProduct Load (288.9ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 2205ms (View: 1510, DB: 318) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-07-19 11:14:25) [GET]
+  [4;36;1mProduct Load (126.8ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 2527ms (View: 786, DB: 128) | 200 OK [http://localhost/store]
